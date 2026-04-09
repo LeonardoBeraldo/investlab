@@ -1,0 +1,47 @@
+[project]
+name = "investlab"
+version = "1.0.0"
+description = "InvestLab — Painel de Decisão de Investimentos"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "InvestLab", email = "contato@investlab.app" }]
+dependencies = [
+    "flet>=0.83.0",
+    "yfinance",
+]
+
+[tool.flet]
+org            = "com.investlab"
+product        = "InvestLab"
+company        = "InvestLab"
+copyright      = "Copyright (C) 2026 InvestLab"
+build_number   = 1
+
+[tool.flet.app]
+path   = "src"
+module = "main"
+
+[tool.flet.splash]
+color      = "#1a3c34"
+dark_color = "#1a3c34"
+
+[tool.flet.android]
+adaptive_icon_background = "#1a3c34"
+
+# ── Como rodar e compilar ─────────────────────────────────────────────
+#
+#   Desenvolvimento (desktop):
+#       cd investlab
+#       pip install flet>=0.83.0
+#       flet run src/main.py
+#
+#   Desktop executável (Windows/macOS/Linux):
+#       flet build windows   (ou macos / linux)
+#
+#   APK Android:
+#       flet build apk
+#       # O APK fica em build/apk/app-release.apk
+#
+#   AAB (Google Play):
+#       flet build aab
+# ─────────────────────────────────────────────────────────────────────
