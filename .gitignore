@@ -1,0 +1,22 @@
+# Ambientes Virtuais (Pastas pesadas que não precisam de ir para o Git)
+.venv/
+venv/
+env/
+bin/
+
+# Python (Ficheiros temporários e cache)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Bases de Dados Locais (Geralmente mantemos os dados no PC e apenas o código no Git)
+*.sqlite3
+*.db
+
+# Configurações de editores e IDEs
+.vscode/
+.idea/
+
+# Ficheiros de sistema
+Thumbs.db
+.DS_Store
